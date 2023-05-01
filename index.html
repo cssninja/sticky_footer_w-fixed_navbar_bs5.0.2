@@ -44,7 +44,7 @@
         }
       }
       
-      /* row style from: https://getbootstrap.com/docs/5.0/assets/css/docs.css */
+      /* row style from: https://getbootstrap.com/docs/5.0/assets/css/docs.css .. + sign described here: https://www.w3.org/TR/CSS21/selector.html#adjacent-selectors */
       .bd-example-row .row>.col,.bd-example-row .row>[class^="col-"] {
         padding-top:.75rem;
         padding-bottom:.75rem;
@@ -52,20 +52,6 @@
         border:1px solid rgba(39,41,43,0.1)}
       .bd-example-row .row+.row {
         margin-top:1rem}
-      .bd-example-row-flex-cols .row {
-        min-height:10rem;
-        background-color:rgba(255,0,0,0.1)
-      }
-      
-      .bd-example-row .row>.col,.bd-example-row .row>[class^="col-"] {
-        padding-top:.75rem;
-        padding-bottom:.75rem;
-        background-color:rgba(39,41,43,0.03);
-        border:1px solid rgba(39,41,43,0.1)
-      }
-      .bd-example-row .row+.row {
-        margin-top:1rem
-      }
       .bd-example-row-flex-cols .row {
         min-height:10rem;
         background-color:rgba(255,0,0,0.1)
@@ -110,16 +96,19 @@
 <main class="flex-shrink-0">
   <div class="container">
     
-    <div class="bd-example s1 bd-example-row s2">
+    <div class="bd-example-row new">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">col-sm-8</div>
-          <div class="col-sm-4">col-sm-4</div>
+          <div class="col-md">col-md</div>
+          <div class="col-md">col-md</div>
         </div>
         <div class="row">
-          <div class="col-sm">col-sm</div>
-          <div class="col-sm">col-sm</div>
-          <div class="col-sm">col-sm</div>
+          <div class="col-md">col-md</div>
+          <div class="col-md">col-md</div>
+        </div>
+        <div class="row">
+          <div class="col-md">col-md</div>
+          <div class="col-md">col-md</div>
         </div>
       </div>
     </div>
@@ -133,9 +122,7 @@
   </div>
 </footer>
 
-
-    <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+<script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       
   </body>
 </html>
