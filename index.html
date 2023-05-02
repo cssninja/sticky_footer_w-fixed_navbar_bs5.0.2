@@ -16,6 +16,9 @@
     
       2
       include styled code (entire ux_edits file) https://highlightjs.org/
+
+      3
+      color picker > https://coolors.co/1b1b1b
     
     -->
 
@@ -40,8 +43,8 @@
 
     <style>
       body {
-        background: #1D2020;
-        font-size: 0.9em;
+        background: #2E3338;
+        font-size: 1em;
       }
       a {
         color: #FDF7ED;
@@ -74,15 +77,8 @@
         /* margin-top:5em; */
         padding-top:.75rem;
         padding-bottom:.75rem;
-        background-color:rgba(39,41,43,0.03);
-        border:1px solid rgba(39,41,43,0.1)
-      }
-        /* .bd-example-row .row+.row {
-          margin-top:1rem
-        } */
-      .bd-example-row-flex-cols .row {
-        min-height:10rem;
-        background-color:rgba(255,0,0,0.1)
+        background-color:rgba(39,41,43,0.03); /* rgba(39,41,43,0.03), hex #27292b .. background of each col-md div */
+        border:1px solid rgba(39,41,43,) /* rgba(39,41,43,0.1), hex #27292b .. border or each col-md div */
       }
 
       /* col-md is 768px breakpoint .. check styles here: https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.css .. long string of URL text was causing css grid to break up, fixed thanks to: https://css-tricks.com/almanac/properties/w/word-break/ */
@@ -107,7 +103,7 @@
     
 <header>
   <!-- Fixed navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="background:#070707 !important;opacity:1 !important;">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Site Map</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
