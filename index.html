@@ -88,6 +88,14 @@
         color: #C6A516 !important;
         text-decoration: none;
       }
+      /* highlighted text for making point */
+      .txtbg {
+        color:#1E2124;
+        background:#676D73;
+        padding:1px;
+        border-radius:2px;
+        font-weight:500;
+      }
       
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -178,6 +186,25 @@
     
     <div class="bd-example-row">
       <div class="container">
+        
+        <div class="row">
+          <div class="col-md">
+            <span class="txtc">developer notes</span><br /><br />
+            
+            <p class="txtc">
+              1) for editing accuracy, in the browser dev tools look at the body ID at the top of the source code <span class="txtbg">for the miva code name of the actual page that is loaded</span> (like CTGY, BASK, etc), as this is not always apparent<br /><br />
+              2) outside of a demo, <span class="txtbg">if you wish to quickly click through the links below (without having to log in)</span> do one of two things:<br /><br />
+              
+                 &nbsp;&nbsp;&nbsp;&nbsp;a) go to customers > check box to the left of any customer > click blue button 'shop as customer' .. this should disable having to log in all the time to see a link<br />
+                 &nbsp;&nbsp;&nbsp;&nbsp;b) or, go to user interface > global settings > global header & footer > global header .. and comment out lines of code 1-4, beginning with:<br /><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;mvt:if expr="NOT g.basket:cust_id"&gt;<br /><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;this disables the need to log in.<br /><br />
+              3) the main user experience a customer will have 90% of the time is the first section below, <span class="txtbg">'shopping ux path' (demo-ready and pixel perfect for ALL 60 customers)</span> .. the remaining pages (with a few exceptions) are account pages or category pages and such with only minor editing left to do<br /><br />
+              4) <span class="txtbg">in gold links below is in-depth coding info</span>, either access to a complete build via codepen or stackblitz, or access to my master edit log, which is a file i used to write and store all CSS editing, so if you wish to see a bunch of media queries or alignments coding, it's all there
+            </d>
+            
+          </div>
+        </div>
 
         <div class="row">
           <div class="col-md">
@@ -221,8 +248,6 @@
             <span class="txtc">invoice</span><br />
             <a target="_blank" href="https://peakdentalstore.com/invoice.html">https://peakdentalstore.com/invoice.html</a><br />
             <span class="txtc">edit: user interface > templates > INVC</span>&nbsp;&nbsp;<br /><br />
-            
-            <span class="txtc_2">* in browser dev tools look at body ID for miva code name of page</span>
           </div>
           <div class="col-md">
             <span class="txtc">shopping ux path, sub pages</span><br /><br />
