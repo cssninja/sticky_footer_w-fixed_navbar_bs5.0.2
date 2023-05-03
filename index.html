@@ -97,6 +97,22 @@
         font-weight:500;
       }
       
+      /* underline control thanks to: https://css-tricks.com/styling-links-with-real-underlines/ */
+      .unq {
+        color: #9F840C;
+      }
+      .unq a {
+        text-decoration-color: #9F840C;
+        text-decoration-thickness: .225em;
+        text-underline-offset: 4px;
+      }
+      .unq a:hover {
+        color: #C6A516 !important;
+        text-decoration-color: #C6A516;
+        text-decoration-thickness: .225em;
+        text-underline-offset: 4px;
+      }
+      
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -200,7 +216,7 @@
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;mvt:if expr="NOT g.basket:cust_id"&gt;<br /><br />
               &nbsp;&nbsp;&nbsp;&nbsp;this disables the need to log in.<br /><br />
               3) the main user experience a customer will have 90% of the time is the first section below, <span class="txtbg">'shopping ux path' (demo-ready and pixel perfect for ALL 60 customers)</span> .. the remaining pages (with a few exceptions) are account pages or category pages and such with only minor editing left to do<br /><br />
-              4) <span class="txtbg">in gold links below is in-depth coding info</span>, either access to a complete build via codepen or stackblitz, or access to my master edit log, which is a file i used to write and store all CSS editing, so if you wish to see a bunch of media queries or alignments coding, it's all there
+              4) <span class="txtbg">in gold links below is in-depth coding info</span>, either access to a complete build via codepen or stackblitz, or access to my <span class="unq"><a class="unq" href="https://pionezero.com/ux_edits_v2/">master edit log</a></span>, which is a file i used to write and store all CSS editing, so if you wish to see a bunch of media queries or alignments coding, it's all there
             </d>
             
           </div>
